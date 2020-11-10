@@ -7,11 +7,11 @@ const server = http
     //res.end('hi');
     router.route(req,res);
   })
-  .on('error' , e=>{
+  .on('error' ,e=>{
     console.error('Server Error' , e);
   })
-  .on('clientError', e =>{
-  console.error('Server Error',e);
+  .on('clientError',e =>{
+  console.error('client Error',e);
 });
 
 const port=8000;
