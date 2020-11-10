@@ -11,7 +11,7 @@ const server = http
     console.error('Server Error' , e);
   })
   .on('clientError',e =>{
-  console.error('client Error',e);
+  console.error('Client Error',e);
 });
 
 const port=8000;
